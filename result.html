@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>결과 카드</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="result-wrap">
+  <!-- 100% 무대(여기서 이미지가 화면 밖→안으로 이동) -->
+  <div class="stage" id="stage">
+    <!-- 중앙 카드 슬롯(고정 프레임) -->
+    <div class="slot" id="slot"></div>
+
+    <!-- 움직이는 카드 이미지들(무대 위에서 이동) -->
+    <img id="card-current" class="card card--current" alt="현재 카드" />
+    <img id="card-next" class="card card--next" alt="다음 카드" />
+  </div>
+
+  <button id="redraw-btn" class="overlay-btn">다시 뽑기</button>
+</div>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
